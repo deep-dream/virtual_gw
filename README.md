@@ -1,3 +1,16 @@
+Sometimes for testing, debugging or development aims you need full control of the traffic between server
+and client applications. Virtual GV uses the raw access to the Ethernet level packets to register new
+virtual MAC address, request IP address from DHCP, and establish some basic routing/forwarding rules.
+
+After that you can use it as a gateway between your applications. The functionality of Virtual GV allows to:
+- Add delay
+- Randomly drop packets
+- Limit data transmission bandwidth
+
+These rules maybe combined in a multiple chains and applied based on ip:port filter.
+
+Virtual GV project is based on LIBPcap library. It's mostly tested on the windows platform. It's pretty simple and may be used for educational purpose.
+
 Examples:
 
 start VGW with 1 ethernet adapter (on local machine):
