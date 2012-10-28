@@ -1,5 +1,20 @@
+Examples:
+
+start VGW with 1 ethernet adapter (on local machine):
+
+	vgw.exe -name=ServerName -i=1
+
+stop VGW (from any machine at LAN):
+
+	vgw.exe -name=ServerName -scmd stop
+
+get VGW server IP by ServerName(from any machine at LAN):
+
+	vgw.exe -name=ServerName -discovery
+
 
 Know issues:
+
 	-	Build procedure broken. Must be linked with wpcap.lib, packet.lib 
 
 
@@ -9,6 +24,7 @@ Know issues:
 		If the options are turned off all work fine
 
 ToDo:
+
 	-	Use random or just unique MAC for each run (use the same MAC on the same PC)
 
 		Idea:
